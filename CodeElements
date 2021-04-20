@@ -1,0 +1,130 @@
+<div>
+<p>Coding Elements</p>
+<p>ItsODRJR</p>
+</div>
+<p>PROGRAMMING</p>
+<p>Programming</p>
+<ul>
+<li>Programs develop creative expression to satisfy personal curiosity to create new knowledge or to solve problems</li>
+</ul>
+<p>Programs Can Be Flexible</p>
+<ul>
+<li>Audience involved in the development of programs can make the program change its standards and add new features to keep the audience appealed</li>
+</ul>
+<p>Programming Design Steps</p>
+<ul>
+<li>When designing a large program, an iterative process helps with correctly coding. It can check for errors with the process of Designing, Implementing, Testing, Debugging, and Maintaining Programs. This is repeated until the programs release.</li>
+</ul>
+<p>Program Documentation</p>
+<ul>
+<li>Documentation is helpful in all stages of development. Documentation is useful because it can help organize your program and speed up development.</li>
+</ul>
+<p>FLOWCHARTS</p>
+<p>Flowcharts</p>
+<ul>
+<li>A flowchart is a way to represent an algorithm visually</li>
+</ul>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p>BLOCK</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>EXPLANATION</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Oval</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>The start or end of an algorithm</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Rectangle</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>One or more processing steps, such as a statement that assigns a value to a variable</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Diamond</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>A conditional or decision step, where execution proceeds to the side labeled true if the condition is true, same as false</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Parallelogram</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Displays a message</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>LISTS</p>
+<p>Lists</p>
+<ul>
+<li>Also known as arrays, a list is an organized and formatted way of storing and retrieving data.</li>
+<li>Index&rsquo;s start at 1 in codes such as Lua and pseudocode while some start at 1 such as JavaScript and C++</li>
+</ul>
+<p>Examples of Lists</p>
+<ol start="1">
+<li>animals[&ldquo;Dog&rdquo;, &ldquo;Cat&rdquo;, &ldquo;Horse&rdquo;, Donkey&rdquo;]</li>
+<li>favoriteNumbers[1,3,5,23,65]</li>
+</ol>
+<p>Traversing a List</p>
+<ul>
+<li>Traversing a list can be pretty simple if you use a loop</li>
+<li>You can set a loop and an the index to your list will be i</li>
+</ul>
+<p>PROCEDURES</p>
+<p>Procedures</p>
+<ul>
+<li>A procedure, also known as function, method, or subroutine, is a set of code that is referred to by name and can be called (fired, or invoked) at any point in a program simply by utilizing the produces name</li>
+</ul>
+<p>Parameters</p>
+<ul>
+<li>Also known as arguments, are variables or values that are passed into a procedure to get a certain result</li>
+</ul>
+<p>Returns</p>
+<ul>
+<li>A variable or value that is sent back to the function</li>
+</ul>
+<p>Procedure Example</p>
+<ul>
+<li>PROCEDURE hello(){</li>
+</ul>
+<p>console.log(&ldquo;Hello!&rdquo;)</p>
+<p>}</p>
+<p>This procedure will print &ldquo;Hello!&rdquo; when called using hello()</p>
+<p>Procedure w/ Parameters Example</p>
+<ul>
+<li>PROCEDURE doubling(list){</li>
+</ul>
+<p>count = 1</p>
+<p>REPEAT LENGTH (list) TIMES{</p>
+<p>list[count] = list[count] * 2</p>
+<p>count = count +1</p>
+<p>}</p>
+<p>}</p>
+<p>This procedure will double the current index in the list it is given through parameters. Its called by doubling(list) and its parameter is a var and it is var list = [234,2,45,66)</p>
+<p>Procedure w/ Parameters Example</p>
+<ul>
+<li>PROCEDURE return(type){</li>
+</ul>
+<p>var z = null</p>
+<p>if (type == true) {</p>
+<p>z = &ldquo;Type is true&rdquo;</p>
+<p>}elseif (type == false) {</p>
+<p>z = &ldquo;Type is false&rdquo;</p>
+<p>}</p>
+<p>return z</p>
+<p>When console.log(return(true)) is called it will print &ldquo;Type is true&rdquo; and vice versa with false.</p>
