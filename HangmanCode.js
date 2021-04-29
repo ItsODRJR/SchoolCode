@@ -26,7 +26,7 @@ var word = prompt("Type the word you would like to guess");
   showElement("hmInput");
   setText("hmOutput","_");
 if (word == null) { //Checks if there is a word
-  lose();
+  gameOver("lost");
   setText("hmOutput", "Next time type a word.");
 } else {
 for (var i = 0; i < word.length-1; i++) {
@@ -75,7 +75,7 @@ for (var i = 0; i < globalWord.length; i++) {
     found = true;
     winCheck += 1;
     if (winCheck == globalWord.length) {
-    win();
+    gameOver("won");
     }
   }
 }
@@ -84,7 +84,7 @@ for (var i = 0; i < globalWord.length; i++) {
     currentElement += 1;
     loseCheck += 1;
      if (loseCheck == 6) {
-       lose();
+       gameOver("lost");
        setText("hmOutput",'The word was "'+globalWord+'"');
      }
   } 
@@ -116,7 +116,8 @@ function reset(){ //Resets whole app for another round
   }
 }
 
-function lose() { //Runs when player loses
+function gameOver(status) {
+if (status == "lost") {
 for (var u = 1; u < 7; u++) {
         hideElement("ele" + u);
        }
@@ -127,12 +128,11 @@ for (var u = 1; u < 7; u++) {
       showElement("gameOverIcon");
       hideElement("hangmanMain");
       showElement("sButton");
-}
-
-function win() { //Runs when player wins
+  }
+else if (status == "won") {
 setText("hmOutput", globalWord);
-  for (var u = 1; u < 7; u++) {
-     hideElement("ele" + u);
+  for (var m = 1; m < 7; m++) {
+     hideElement("ele" + m);
   }
   setText("gameOverLabel","You Win!");
   setProperty("gameOverIcon","image","icon://fa-trophy");
@@ -141,4 +141,5 @@ setText("hmOutput", globalWord);
   showElement("gameOverIcon");
   hideElement("hangmanMain");
   showElement("sButton");
+  }
 }
